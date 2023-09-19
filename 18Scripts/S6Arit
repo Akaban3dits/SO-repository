@@ -1,0 +1,17 @@
+#!/bin/bash
+V1=23
+V2=45
+
+Resultado=$(expr ${V1} + ${V2})
+echo "Resultado: ${Resultado}"
+
+Resultado=$(expr ${V1} + ${V2} + 3 )
+echo "Resultado: ${Resultado}"
+
+
+V1=5
+V2=4
+echo "${V1} y ${V2}"
+
+Resultado=$[${V1} + $[${V2} *3]]
+echo "Ahora: ${V1} + ${V2} * 3 = ${Resultado}"

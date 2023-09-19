@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+una_variable=666
+mi_nombre="Akabane"
+names="Joahan Emmanuel Rosario Novelo"
+boln=true
+
+echo "Un numero: ${una_variable}"
+echo "Un nombre: ${mi_nombre}"
+echo "group of names: ${names}"
+
+echo "Has invocado el script pasandome ${0} a ${1}"
+echo "Me has pasado ${#} argumentos"
+
+echo "TDa:${!} y $@"
+
+echo "Mi directorio actual: ${PWD} y mi usuario ${UID}"

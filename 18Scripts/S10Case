@@ -1,0 +1,22 @@
+#!/bin/bash
+N=""
+
+echo -n "Dame un nombre: "
+read N
+
+case ${N} in
+	iñigo)
+		echo "${N} dice: me dedico a Nav"
+		;;	
+	sten)
+		echo "${N} dice: tengo blog friki"
+		;;
+	asier)
+		echo "${N}> dice: .Net me gusta"
+	pello)
+		echo "${N}> dice: el shell"
+		;;
+	*)
+		echo "A ${Nombre} no lo conozco"
+
+esac

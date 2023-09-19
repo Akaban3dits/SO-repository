@@ -1,0 +1,12 @@
+
+#!/bin/bash
+Nombre="Navarrux Live edition"
+
+echo "${Nombre} una parte ${Nombre:8} y otra ${Nombre:8:4}"
+Sinv=
+echo "Variable Sin valor: ${Sinv:-31337} eta ${Vacio: -'Miguel Duraznin'}"
+echo "La variable Sin valor no tiene valor algun ${Sinv} "
+
+Programa='sniffit'
+echo "valor de programa: ${Programa:+'tcpdump'} y ahora ${Programa}"
+echo "Valor de: ${Ejemplo:?'Roberto'} y luego ${Ejemplo}"

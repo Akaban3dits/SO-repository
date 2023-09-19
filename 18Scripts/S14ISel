@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Select de distros"
+
+Distros= "Debian Ubuntu Navarrux Gentoo Mandriva"
+echo "Selecciona la mejor opcion por favor: ${resultado}"
+
+select resultado in ${Distros}
+
+do
+
+(test${#resultado} -ne 0) && break
+echo "Selecciona la mejor opcion por favor: ${resultado}"
+
+done
+
+echo "Sistema seleccionado: [${resultado}] longitud de cadenea: $#{resultado}"
+

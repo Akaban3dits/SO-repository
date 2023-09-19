@@ -1,0 +1,5 @@
+#!/bin/bash
+Saludo="Hola mundo"
+
+echo -n "Este script te dice: "
+echo ${Saludo}

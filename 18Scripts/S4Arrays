@@ -1,0 +1,15 @@
+#!/bin/bash
+
+asociaciones[0]="A"
+asociaciones[1]="B"
+asociaciones[2]="C"
+asociaciones[3]="D"
+
+partidos=("P1" "P2" "P3" "P4" "P5" "P6")
+numeros=(15 23 21 25 26 27 12 13 15 16 17)
+
+
+echo ${asociaciones[0]} es una asociacion, ${partidos[1]} un partido
+
+echo "Tamaño: $#asociaciones"
+echo "Tamaño: ${$#{partidos}}"

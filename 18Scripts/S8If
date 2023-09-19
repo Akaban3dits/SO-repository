@@ -1,0 +1,37 @@
+#!/bin/bash
+V=45
+
+if [ ${V} -gt 0 ]; then
+echo "${V} es mayor que 0"
+fi
+
+if [ -e /etc/shadow ]
+then
+ 	echo "Ok, parece que tienes sistema shadow pass"
+fi
+
+
+O=-23
+if [ ${O} -lt 0 ]
+then 
+	echo "${O} es menor que 0"
+else 
+	echo "${O} es mayor que 0"
+fi
+
+echo -n "Mete un valor: "
+read V1
+echo -n "Mete el segundo valor: "
+read V2
+
+echo "Has introducido ${V1} y ${V2}"
+
+if [ ${V1} -gt ${V2} ]
+then
+echo "${V1} es mayor que ${V2}"
+elif [ ${V1} -lt ${V2} ]
+then
+	echo "${V1} < ${V2}"
+else
+	echo "${V1} y ${V2} son iguales"
+fi
